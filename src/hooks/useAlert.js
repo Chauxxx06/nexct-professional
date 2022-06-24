@@ -12,12 +12,12 @@ const useAlert = (options) => {
     ...options,
   });
   const toggleAlert = () => {
-      setAlert(!alert.active);
+    setAlert(!alert.active);
   };
-  return{
-      alert,
-      setAlert,
-      toggleAlert
+  return {
+    alert,
+    setAlert,
+    toggleAlert,
   };
 };
 

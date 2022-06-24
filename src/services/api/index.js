@@ -12,22 +12,22 @@ const endPoints = {
     putProducts: (id) => `${API}/api/${VERSION}/products/${id}`,
     deleteProducts: (id) => `${API}/api/${VERSION}/products/${id}`,
     getProducts: (limit, offset) => `${API}/api/${VERSION}/products?limit=${limit}&offset=${offset}`,
-    product: `${API}/api/${VERSION}/products/`
+    product: `${API}/api/${VERSION}/products/`,
   },
   users: {
     getUsers: `${API}/api/${VERSION}/users`,
     postUsers: `${API}/api/${VERSION}/users`,
   },
-  categories:{
+  categories: {
     getCategories: `${API}/api/${VERSION}/categories`,
     postCategories: `${API}/api/${VERSION}/categories`,
     getCategoriesProduct: (id) => `${API}/api/${VERSION}/categories/${id}/products`,
     putCategories: (id) => `${API}/api/${VERSION}/categories/${id}`,
   },
-  files:{
+  files: {
     postFiles: `${API}/api/${VERSION}/files/upload`,
-    getFiles: (fileName) => `${API}/api/${VERSION}/${fileName}`
-  }
+    getFiles: (fileName) => `${API}/api/${VERSION}/${fileName}`,
+  },
 };
 
 export default endPoints;
